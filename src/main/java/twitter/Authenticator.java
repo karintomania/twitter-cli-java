@@ -37,7 +37,7 @@ public class Authenticator {
 
 
 	// OAuth認証
-	public boolean authenticate(){
+	public void authenticate(){
     // The factory instance is re-useable and thread safe.
     Twitter twitter = TwitterFactory.getSingleton();
 	
@@ -76,7 +76,6 @@ public class Authenticator {
 		ioe.printStackTrace();
 	}
 
-	return true;
   }
 
 
